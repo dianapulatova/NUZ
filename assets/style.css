@@ -1,0 +1,16 @@
+.article-text-container {
+  height: 245px;
+}
+
+.article-text {
+  height: 345px;
+  overflow: scroll;
+
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
