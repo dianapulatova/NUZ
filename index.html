@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NUZ</title>
-</head>
-<body>
-    <h1>NUZ</h1>
-    
-</body>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NOTE INPUT FORM -->
+
+    <form class="center helvetica pa4 black-80">
+      <div class="center measure">
+        <label for="url" class="f6 db mb2">Paste an article URL here</label>
+        <input
+          id="input-text"
+          class="input-reset ba b--black-20 pa2 mb2 db w-100"
+          type="text"
+          aria-describedby="name-desc"
+        />
+        <input
+          type="submit"
+          class="button-reset w-auto-ns bg-black-80 white f5 pv2 pv3-ns ph4 ba b--black-20 bg-hover-mid-gray"
+        />
+      </div>
+    </form>
+
+    <!-- NOTE ARTICLE CONTAINER -->
+
+    <article class="center article-container helvetica cf ph3 ph5-ns pv5">
+      <header class="article-header center fn w-50-ns pr4-ns">
+        <h1 class="article-title f2 ttu lh-title fw9 mb1 mt0 pt3 bb bw2">
+          title
+        </h1>
+        <h2 class="article-source f3 ttu mb1 lh-solid">
+          Reuters
+        </h2>
+        <h3 class="article-author f4 mb1 lh-solid">
+          Author B. Author
+        </h3>
+        <time class="article-date f6 ttu tracked gray"
+          >Sometime before 1967</time
+        >
+      </header>
+      <div class="article-text-container center fn w-70-ns mt-24 mt4">
+        <p class="article-text center f5 lh-copy measure mt24-ns">
+          TYPOGRAPHY, even when poorly executed, can never be taken for granted;
+          nor is it ever accidental. Indeed, beauti- fully typeset pages are
+          always the result of long experience. Now and then they even attain
+          the rank of great artistic achievement. But the art of typesetting
+          stands apart from ex- pressive artwork, because the appeal is not
+          limited to a small circle. It is open to everyone's critical judgment,
+          and nowhere does this judgment carry more weight. Typography that can-
+          not be read by everybody is useless. Even for someone who constantly
+          ponders matters of readability and legibility, it is difficult to
+          determine whether something can be read with ease, but the average
+          reader will rebel at once when the type is too small or otherwise
+          irritates the eye; both are signs of a certain illegibility already.
+        </p>
+      </div>
+    </article>
+
+    <!-- NOTE SUMMARY CONTAINER -->
+
+    <article class="center summary-container helvetica cf ph3 ph5-ns pv5">
+      <header class="summary-header center fn w-50-ns pr4-ns">
+        <h1 class="summary-title f2 ttu lh-title fw9 mb1 mt0 pt3 bb bw2">
+          summary
+        </h1>
+      </header>
+      <div class="summary-container center fn w-70-ns mt-24 mt4">
+        <p class="summary-text center f5 lh-copy measure mt24-ns">
+          TYPOGRAPHY, even when poorly executed, can never be taken for granted;
+          nor is it ever accidental. Indeed, beauti- fully typeset pages are
+          always the result of long experience. Now and then they even attain
+          the rank of great artistic achievement. But the art of typesetting
+          stands apart from ex- pressive artwork, because the appeal is not
+          limited to a small circle. It is open to everyone's critical judgment,
+          and nowhere does this judgment carry more weight. Typography that can-
+          not be read by everybody is useless. Even for someone who constantly
+          ponders matters of readability and legibility, it is difficult to
+          determine whether something can be read with ease, but the average
+          reader will rebel at once when the type is too small or otherwise
+          irritates the eye; both are signs of a certain illegibility already.
+        </p>
+      </div>
+    </article>
+
+    <!-- NOTE ANALYSIS CONTAINER -->
+
+    <article class="center analysis-container helvetica cf ph3 ph5-ns pv5">
+      <div class="center fn w-50-ns pr4-ns">
+        <h1 class="analysis-title f2 ttu lh-title fw9 mb1 mt0 pt3 bb bw2">
+          analysis
+        </h1>
+        <h3 class="sentiment-title ttu f4 mb1 lh-solid">
+          sentiment
+        </h3>
+        <p class="sentiment-score f6">-0.711</p>
+        <h3 class="concepts-title ttu f4 mb1 lh-solid">
+          concepts
+        </h3>
+        <p class="concept-item f6">Sometime before 1967</p>
+        <h3 class="topics-title ttu f4 mb1 lh-solid">
+          topics
+        </h3>
+        <p class="topic-item f6">Sometime before 1967</p>
+        <p class="topic-rank f6 b mt0">rank: 5</p>
+      </div>
+    </article>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
