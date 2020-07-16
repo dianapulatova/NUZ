@@ -7,8 +7,8 @@
 // var date = $("#article-date")
 // var article = $("#article-text")
 
-var APIKey= "6d301cb460de4af881b497a471418db4"
-var queryURL= "http://newsapi.org/v2/everything?q=bitcoin&from=2020-06-15&sortBy=publishedAt&apiKey=" + APIKey
+var APIKey= "56949a1e-1226-4cc0-a36d-0ed86e97d690"
+var queryURL= "https://api.intellexer.com/intellexerApi/analyzeSentiments/?q=" + "&appid=" + APIKey
 
 $.ajax({
     url: queryURL,
