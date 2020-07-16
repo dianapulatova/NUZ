@@ -24,7 +24,6 @@ $("#btn").on("click", function (event) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
-
     $(".article-title").text(response.objects[0].title);
     $(".article-source").text(response.objects[0].siteName);
     $(".article-author").text(response.objects[0].author);
@@ -36,15 +35,6 @@ $("#btn").on("click", function (event) {
 // var arr = userInput.split(/(\s+)/).filter(function(e){return e.trim().length > 0;});;
 
 // var title = arr.join("%20");
-// console.log(title);
-// var proxyUrl = "52.179.231.206"
-// var queryURL= `${proxyUrl}http://newsapi.org/v2/everything?qInTitle=${title}&apiKey=6d301cb460de4af881b497a471418db4`
-// $.ajax({
-//     url: queryURL,
-//     method: "GET",
-//   }).then(function (response) {
-//       console.log(response);
-//   })
 // console.log(title);
 // var proxyUrl = "52.179.231.206"
 // var queryURL= `${proxyUrl}http://newsapi.org/v2/everything?qInTitle=${title}&apiKey=6d301cb460de4af881b497a471418db4`
