@@ -18,6 +18,7 @@ $("#btn").on("click", function(event) {
     // Diffbot Article API link
     // inputUrl = inputUrl.replace(/:/gi, "%3A");
     // inputUrl = inputUrl.replace(/\//gi, "%2A");
+    // Encode URL
     inputUrl = encodeURIComponent(inputUrl);
     console.log(inputUrl);
     var queryURL = `https://api.diffbot.com/v3/article?token=07098c9aee4fa512825707b13860eed2&url=${inputUrl}`
