@@ -24,6 +24,11 @@ $("#btn").on("click", function (event) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+    $(".article-title").text(response.objects[0].title);
+    $(".article-source").text(response.objects[0].siteName);
+    $(".article-author").text(response.objects[0].author);
+    $(".article-date").text(response.objects[0].estimatedDate);
+    $(".article-text").text(response.objects[0].text);
   });
 });
 
