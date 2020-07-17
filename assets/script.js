@@ -77,7 +77,3 @@ var settings = {
   data:
     '[{"id": "snt1", "text": "YourText"}, {"id": "snt2", "text": "YourText"}]',
 };
-
-$.ajax(settings).done(function (response) {
-  console.log(response);
-});
