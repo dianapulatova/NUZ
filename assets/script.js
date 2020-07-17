@@ -10,6 +10,10 @@ var article = $("#article-text");
 $("#btn").on("click", function (event) {
   event.preventDefault();
 
+  // Brings back spinning logo until content loads if another article link is submitted
+  $(".nuz-logo-container").removeClass("hide");
+  $(".main-container").addClass("hide");
+
   // Assigning user input to a var
   var inputUrl = $("#input-text").val();
 
@@ -26,6 +30,9 @@ $("#btn").on("click", function (event) {
     url: queryURL,
     method: "GET",
   }).then(function (response) {
+    // Hides logo and shows content when information is loaded
+    $(".nuz-logo-container").addClass("hide");
+    $(".main-container").removeClass("hide");
     console.log("diffbot = ", response);
 
     // Article classes that will push reponse text on to page
@@ -35,6 +42,21 @@ $("#btn").on("click", function (event) {
     $(".article-date").text(response.objects[0].estimatedDate);
     $(".article-text").text(response.objects[0].text);
     $(".sentiment-score").text(response.objects[0].sentiment);
+
+    // Shows the correct emoji for the sentiment value
+    var sentimentScore = parseFloat(response.objects[0].sentiment);
+
+    if (sentimentScore > 0) {
+      $(".positive-sentiment").removeClass("hide");
+      $(".positive-icon").removeClass("hide");
+      $(".negative-sentiment").addClass("hide");
+      $(".negative-icon").addClass("hide");
+    } else {
+      $(".negative-sentiment").removeClass("hide");
+      $(".negative-icon").removeClass("hide");
+      $(".positive-sentiment").addClass("hide");
+      $(".positive-icon").addClass("hide");
+    }
 
     // Text Summarizer - pushes the info of the diffbot api into the meaning cloud api
     var text = response.objects[0].text;

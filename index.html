@@ -31,38 +31,17 @@
       </div>
     </form>
 
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="nuz-logo-container center tc">
-      <svg
-        id="nuz-logo"
-        class=""
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 873.75 290.84"
-      >
-        <title>nuz-logo_1</title>
-        <g id="Layer_2" data-name="Layer 2">
-          <g id="Layer_1-2" data-name="Layer 1">
-            <path
-              d="M0,0H68.8c28.39,10.64,55.3,17.35,80.73,30.73,25.43,13,49.38,32.74,71.85,61.56,13.17,16.15,29.1,48.85,29.06,49.2l.75,0c0-.48-8.46-39.35-13.19-59Q220.32,5.33,202.64,0h66.92q24.15,29,48.29,282.23-23.4-.47-46.79-.61C231.53,179.75,186,109.68,134.45,77.07,119.87,66.67,99,53,98.9,53.05l-.86.37c0-.27,12.87,22.86,20.28,42.87q27.39,71.73,54.8,187-23.9,1-47.79,2.74Q62.66,143,0,0Z"
-            />
-            <path
-              d="M341.55,154.19Q329.9,37.22,318.23,0h67.86q5.09,69.22,10.17,175.51c1.75,33.05,16,62.41,50,71.11,32.24,8.11,49.1-2.7,51.51-27.76Q504.9,134.82,512,0h67.86q-13.7,165.08-27.4,239.32c-4.36,23.75-16.42,32.14-34.1,39.18-17.81,6.34-41.23,11.34-71.53,12.3-30.64.89-54.25-10.33-72-35.81C357.14,230.28,345.33,191.29,341.55,154.19Z"
-            />
-            <path
-              d="M569,275c28.58-11,60.09-27.59,94.53-61.19C698,181.18,735.37,131.53,775.67,77.55c.14-.58.29-1.16.43-1.74C721.91,88.07,667.73,88.3,613.54,82.28Q618,44.53,622.44,0H873.75q-10.53,25.07-21,49.85c-41.55,45.62-80.36,102.72-116.41,144.31-36,42.78-69.35,70-99.91,83.23-.1.17-.2.34-.31.5,45.73-.65,91.46-11.9,137.19-41.09Q762.48,261.4,751.7,286c-63.4,4.64-126.79,5.05-190.18,3.81Q565.27,285,569,275Z"
-            />
-          </g>
-        </g>
-      </svg>
+    <div class="spinner nuz-logo-container center tc">
+      <br />
+      <br />
+      <br />
+      <br />
+      <img class=".nuz-logo" src="assets/nuzlogo.svg" alt="">
     </div>
 
     <!-- NOTE ARTICLE CONTAINER -->
 
-    <div class="main-container">
+    <div class="hide main-container">
       <article class="center article-container helvetica cf ph3 ph5-ns pv5">
         <header class="article-header center fn w-50-ns pr4-ns">
           <h1 class="article-title f2 ttu lh-title fw9 mb1 mt0 pt3 bb bw2">
@@ -78,33 +57,9 @@
             >Sometime before 2021</time
           >
         </header>
-        <div class="article-text-container center fn w-70-ns mt-24 mt4">
-          <p class="article-text center f5 lh-copy measure mt24-ns">
-            TYPOGRAPHY, even when poorly executed, can never be taken for
-            granted; nor is it ever accidental. Indeed, beauti- fully typeset
-            pages are always the result of long experience. Now and then they
-            even attain the rank of great artistic achievement. But the art of
-            typesetting stands apart from ex- pressive artwork, because the
-            appeal is not limited to a small circle. It is open to everyone's
-            critical judgment, and nowhere does this judgment carry more weight.
-            Typography that can- not be read by everybody is useless. Even for
-            someone who constantly ponders matters of readability and
-            legibility, it is difficult to determine whether something can be
-            read with ease, but the average reader will rebel at once when the
-            type is too small or otherwise irritates the eye; both are signs of
-            a certain illegibility already.
-          </p>
-        </div>
-      </article>
-
-      <!-- NOTE SUMMARY CONTAINER -->
-
-      <article class="center summary-container helvetica cf ph3 ph5-ns pv5">
-        <header class="summary-header center fn w-50-ns pr4-ns">
-          <h1 class="summary-title f2 ttu lh-title fw9 mb1 mt0 pt3 bb bw2">
-            summary
-          </h1>
-        </header>
+        <h4 class="summary tc f4 ttu mb1 lh-solid">
+          summary
+        </h4>
         <div class="summary-container center fn w-70-ns mt-24 mt4">
           <p
             id="summary-text"
@@ -127,6 +82,9 @@
         </div>
       </article>
 
+      <!-- NOTE SUMMARY CONTAINER -->
+
+
       <!-- NOTE ANALYSIS CONTAINER -->
 
       <article class="center analysis-container helvetica cf ph3 ph5-ns pv5">
@@ -141,7 +99,7 @@
           <h3 class="hide positive-sentiment ttu f4 mb1 lh-solid">
             positive
           </h3>
-          <h3 class="negative-sentiment ttu f4 mb1 lh-solid">
+          <h3 class="hide negative-sentiment ttu f4 mb1 lh-solid">
             negative
           </h3>
           <div class="hide positive-icon" ttu f4 mb1 lh-solid">
@@ -166,7 +124,7 @@
             />
           </svg>
         </div>
-        <div class="negative-icon" ttu f4 mb1 lh-solid">
+        <div class="hide negative-icon" ttu f4 mb1 lh-solid">
           <svg
             width="2em"
             height="2em"
