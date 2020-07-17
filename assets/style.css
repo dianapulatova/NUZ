@@ -15,16 +15,20 @@
   }
 }
 
+.sumary-text {
+  height: 345px;
+}
+
 .nuz-logo-container {
-  top: 50%;
-  left: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 20px;
   width: 400px;
   max-width: 100%;
 }
 
 .nuz-logo {
-  width: 200px;
+  width: 600px;
 }
 
 .spinner {
