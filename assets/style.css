@@ -14,3 +14,59 @@
     display: none;
   }
 }
+
+.nuz-logo-container {
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+}
+
+.nuz-logo {
+  width: 200px;
+}
+
+.spinner {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes depth {
+  0 {
+    text-shadow: 0 0 black;
+  }
+
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+
+  50% {
+    text-shadow: 0 0 black;
+  }
+
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+      -5px 0 black;
+  }
+
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+.hide {
+  display: none;
+}
